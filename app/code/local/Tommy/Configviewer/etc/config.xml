@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tommy_Configviewer>
+            <version>0.1.0</version>
+        </Tommy_Configviewer>
+    </modules>
+
+
+    <global>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                    <Tommy_configviewer_model_observer>
+                        <type>singleton</type>
+                        <class>Tommy_Configviewer_Model_Observer</class>
+                        <method>checkForConfigRequest</method>
+                    </Tommy_configviewer_model_observer>
+                </observers>
+            </controller_front_init_routers>
+        </events>
+    </global>
+</config>
